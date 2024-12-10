@@ -1,4 +1,4 @@
-package org.classicgames.tictactoe.board
+package org.classicgames.tictactoe.model
 
 interface Cell<T> {
 

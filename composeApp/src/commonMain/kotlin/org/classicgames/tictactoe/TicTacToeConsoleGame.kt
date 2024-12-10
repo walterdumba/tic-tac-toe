@@ -1,8 +1,8 @@
 package org.classicgames.tictactoe
 
-import org.classicgames.tictactoe.board.Board
-import org.classicgames.tictactoe.board.BoardImpl
-import org.classicgames.tictactoe.board.CellImpl
+import org.classicgames.tictactoe.model.Board
+import org.classicgames.tictactoe.model.BoardImpl
+import org.classicgames.tictactoe.model.CellImpl
 
 
 const val NUMBER_OF_ROWS =3

@@ -3,10 +3,9 @@ package org.classicgames.tictactoe
 import org.classicgames.tictactoe.model.Board
 import org.classicgames.tictactoe.model.BoardImpl
 import org.classicgames.tictactoe.model.CellImpl
+import org.classicgames.tictactoe.model.NUMBER_OF_COLS
+import org.classicgames.tictactoe.model.NUMBER_OF_ROWS
 
-
-const val NUMBER_OF_ROWS =3
-const val NUMBER_OF_COLS =3
 
 class TicTacToeConsoleGame{
 

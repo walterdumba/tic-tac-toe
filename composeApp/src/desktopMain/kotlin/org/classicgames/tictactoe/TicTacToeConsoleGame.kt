@@ -3,14 +3,11 @@ package org.classicgames.tictactoe
 import org.classicgames.tictactoe.model.Board
 import org.classicgames.tictactoe.model.BoardImpl
 import org.classicgames.tictactoe.model.CellImpl
-import org.classicgames.tictactoe.model.NUMBER_OF_COLS
-import org.classicgames.tictactoe.model.NUMBER_OF_ROWS
 
 
 class TicTacToeConsoleGame{
 
-
-    private var gameBoard: Board<*> = BoardImpl( Array(NUMBER_OF_ROWS) { Array(NUMBER_OF_COLS) { CellImpl() } })
+    private var gameBoard: Board<*> = BoardImpl( Array(3) { Array(3) { CellImpl() } })
 
     fun isEndGame():Boolean = ( this.gameBoard as BoardImpl).end
     fun play()              = (this.gameBoard.play()        )
@@ -23,7 +20,6 @@ class TicTacToeConsoleGame{
 fun main() {
 
     var g = TicTacToeConsoleGame()
-
     while( !g.isEndGame() ){
         g.clearScreen()
         g.show()

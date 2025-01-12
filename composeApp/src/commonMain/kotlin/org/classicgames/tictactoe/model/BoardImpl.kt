@@ -1,6 +1,5 @@
 package org.classicgames.tictactoe.model
 
-import org.classicgames.tictactoe.NUMBER_OF_COLS
 import java.util.regex.Pattern
 
 
@@ -10,7 +9,8 @@ const val INDEX_OF_ROW_STDIN           =0
 const val INDEX_OF_COL_STDIN           =2
 
 class BoardImpl(board: Array< Array<Cell<Char>> >  ): AbstractBoard<Cell<Char>>(board) {
-
+    val NUMBER_OF_ROWS = board.size;
+    val NUMBER_OF_COLS = board[0].size
 
     var end :Boolean         = false
     var isHumanTurns:Boolean = true
